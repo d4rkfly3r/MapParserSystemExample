@@ -1,0 +1,128 @@
+Map{
+    id='cathedral',
+    name='Cathedral',
+    type='game',
+    assetPack='If there was a recommend asset pack it would go here!',
+    authors=[
+        Author{
+            authorName='Joshua Freedman',
+            authorUsername='d4rkfly3r'
+        },
+        Author{
+            authorName='Mike Liu',
+            authorUsername='gravityfox'
+        },
+        Author{
+            authorName='Nicholas Badger',
+            authorUsername='ferusgrim'
+        }
+    ],
+    teams=[
+        Team{
+            teamID='red',
+            teamName='Team Bloodhounds'
+        },
+        Team{
+            teamID='blue',
+            teamName='Team Deadpeople'
+        }
+    ],
+    zones=[
+        Zone{
+            zoneID='tower1',
+            zoneName='The North Tower',
+            regions=[
+                Region{
+                    points=[
+                        Point{
+                            x='50',
+                            y=' ',
+                            z='20',
+                            r='15',
+                            w=' '
+                        }
+                    ],
+                    weight='-1'
+                }
+            ]
+        }
+    ],
+    games=[
+        Game{
+            gameID='tnt_run',
+            gameName='TNT Run',
+            teams=[],
+            zones=[
+                Zone{
+                    zoneID='winzone-Red',
+                    zoneName='$team.red.name Win Zone',
+                    regions=[
+                        Region{
+                            points=[
+                                Point{
+                                    x='50',
+                                    y=' ',
+                                    z='30',
+                                    r='15',
+                                    w=' '
+                                }
+                            ],
+                            weight='-1'
+                        }
+                    ]
+                }
+            ],
+            spawns=[
+                Spawns{
+                    spawnTeam='red',
+                    regions=[
+                        Region{
+                            points=[
+                                Point{
+                                    x='10',
+                                    y='45',
+                                    z='8',
+                                    r=' ',
+                                    w='1'
+                                },
+                                Point{
+                                    x='20',
+                                    y='45',
+                                    z='29',
+                                    r=' ',
+                                    w='2'
+                                }
+                            ],
+                            weight='3'
+                        }
+                    ],
+                    points=[
+                        Point{
+                            x='10',
+                            y='45',
+                            z='8',
+                            r=' ',
+                            w='1'
+                        },
+                        Point{
+                            x='10',
+                            y='45',
+                            z='29',
+                            r=' ',
+                            w='1'
+                        },
+                        Point{
+                            x='10',
+                            y='15',
+                            z='15',
+                            r='5',
+                            w=' '
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    spawns=[
+    ]
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<map id="cathedral" name="Cathedral" type="game" asset-pack=" If there was a recommend asset pack it would go here!">
+    <author username="d4rkfly3r" name="Joshua Freedman"/>
+    <author username="gravityfox" name="Mike Liu"/>
+    <author username="ferusgrim" name="Nicholas Badger"/>
+
+    <!-- This is global setup stuff - config for all games (can be overridden by the game) -->
+    <team id="red" name="Team Bloodhounds"/>
+    <team id="blue" name="Team Deadpeople"/>
+
+    <zone id="tower1" name="The North Tower">
+        <region>
+            <point x="50" z="20" r="15"/>
+        </region>
+    </zone>
+    <!-- This ends the global setup -->
+
+    <!-- Each game then has its own stuff, or it can override specific stuff from globals -->
+    <game name="TNT Run" id="tnt_run">
+        <spawns team="red">
+            <point x="10" y="45" z="8" w="1"/>
+            <point x="10" y="45" z="29" w="1"/>
+            <region w="3">
+                <point x="10" y="45" z="8" w="1"/>
+                <point x="20" y="45" z="29" w="2"/>
+            </region>
+            <point x="10" y="15" z="15" r="5"/>
+        </spawns>
+        <zone id="winzone-Red" name="$team.red.name Win Zone">
+            <region>
+                <point x="50" z="30" r="15"/>
+            </region>
+        </zone>
+    </game>
+</map>
